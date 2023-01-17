@@ -24,12 +24,13 @@ public class RecoilSystem : MonoBehaviour
     [Space(10)]
     [Header("Animation Curve")]
     [SerializeField] private bool UseCurve = false;
-    [SerializeField] private AnimationCurve RotationX = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
-    [SerializeField] private AnimationCurve RotationY = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
-    [SerializeField] private AnimationCurve RotationZ = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
-    [SerializeField] private AnimationCurve PositionX = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
-    [SerializeField] private AnimationCurve PositionY = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
-    [SerializeField] private AnimationCurve PositionZ = AnimationCurve.EaseInOut(0.0f, 0.0f, 1.0f, 1.0f);
+    // All recoil curves must start and end with zero.
+    [SerializeField] private AnimationCurve RotationX = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
+    [SerializeField] private AnimationCurve RotationY = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
+    [SerializeField] private AnimationCurve RotationZ = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
+    [SerializeField] private AnimationCurve PositionX = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
+    [SerializeField] private AnimationCurve PositionY = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
+    [SerializeField] private AnimationCurve PositionZ = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
     [SerializeField] private float AnimationcurveTime = 0;
     [SerializeField] private float duration = 1.0f;
     private Vector3 InitPosition = Vector3.zero;
@@ -148,6 +149,7 @@ public class RecoilSystem : MonoBehaviour
 
     
 }
+
 
 ```
 * now on your weapon Script when you shot just call this Function: **ApplyRecoil()**
