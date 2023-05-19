@@ -24,12 +24,12 @@ public class RecoilSystem : MonoBehaviour
 
     [Header("Animation Curve")]
     // All recoil curves must start and end with zero.
-    [SerializeField] private AnimationCurve RotationX = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
-    [SerializeField] private AnimationCurve RotationY = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
-    [SerializeField] private AnimationCurve RotationZ = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
-    [SerializeField] private AnimationCurve PositionX = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
-    [SerializeField] private AnimationCurve PositionY = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
-    [SerializeField] private AnimationCurve PositionZ = AnimationCurve.EaseInOut(0.0f, 2.0f, 1.0f, 0.0f);
+    [SerializeField] private AnimationCurve RotationX = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
+    [SerializeField] private AnimationCurve RotationY = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
+    [SerializeField] private AnimationCurve RotationZ = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
+    [SerializeField] private AnimationCurve PositionX = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
+    [SerializeField] private AnimationCurve PositionY = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
+    [SerializeField] private AnimationCurve PositionZ = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
     [SerializeField] private float AnimationcurveTime = 0;
     [SerializeField] private float duration = 1.0f;
     private float TimePassed;
