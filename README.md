@@ -2,7 +2,7 @@
 its not perfect but it worked for me so Yeah,
 
 
-Demo Scene https://drive.google.com/file/d/1ej06rl4de2HagHjB7yoahoTucxAR5gTn/view?usp=sharing
+Demo Package [https://drive.google.com/file/d/1ej06rl4de2HagHjB7yoahoTucxAR5gTn/view?usp=sharing](https://github.com/SHETER0/Simple-Unity-Recoil-System/raw/main/RecoilFaisal.unitypackage)
 
 
 # HOW TO USE
