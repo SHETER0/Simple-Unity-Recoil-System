@@ -31,7 +31,7 @@ public class RecoilSystem : MonoBehaviour
     [SerializeField] private AnimationCurve PositionY = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
     [SerializeField] private AnimationCurve PositionZ = AnimationCurve.EaseInOut(0.0f, 0.0f, 0.0f, 0.0f);
     [SerializeField] private float AnimationcurveTime = 0;
-    [SerializeField] private float duration = 1.0f;
+    [SerializeField] private float duration = 0.2f;
     private float TimePassed;
     private Coroutine Recoil;
     private IEnumerator StartRecoil()
